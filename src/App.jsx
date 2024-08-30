@@ -1,23 +1,25 @@
 
 import './App.css'
 import Header from './components/header/Header'
+import HeroSection from './components/herosection/HeroSection'
 
 function App() {
 
 
   return (
-    <>
+    <div className='appfile'>
       {/* <h1>Header</h1> */}
 
       <Header />
+      <HeroSection />
 
-      <h1>Hero Section</h1>
+      
       <h1>About</h1>
       <h1>Skills</h1>
       <h1>Services</h1>
       <h1>Portfolio</h1>
       <h1>Contact</h1>
-    </>
+    </div>
   )
 }
 

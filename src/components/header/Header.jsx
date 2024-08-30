@@ -19,20 +19,20 @@ const Header = () => {
     ]
 
     return (
-        <div>
+
+        <header>
             <h1>Hassan.</h1>
 
-            <div>
+            <div className='navitems'>
                 {headerData.map((item, index) => {
                     return (
                         <a href={item.link} className="" key={index}>{item.name}</a>
                     )
                 })}
             </div>
+        </header>
 
 
-
-        </div>
     )
 }
 
