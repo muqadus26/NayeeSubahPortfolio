@@ -1,0 +1,120 @@
+.herosection-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 5rem;
+}
+
+img {
+    width: 30rem;
+    height: 25rem;
+    border-radius: 1rem;
+}
+
+.herosection-icon-container {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.herosection-icon-container>a {
+    font-size: 1.5rem;
+    color: rgb(88, 88, 88);
+}
+
+
+.herosection-name-container {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.herosection-name-container-top {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+}
+
+.name-part>h1 {
+    font-size: 3rem;
+    color: rgb(88, 88, 88);
+
+}
+
+.name-part {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.name-part>span {
+    font-size: 2.4rem;
+    color: rgb(231, 237, 57);
+
+}
+
+
+.herosection-name-container-top>h2 {
+    font-size: 1.8rem;
+    color: rgb(88, 88, 88);
+    font-weight: 400;
+
+
+
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 3px;
+        width: 8rem;
+        border-radius: 1rem;
+        background-color: rgb(59, 59, 59);
+        margin-bottom: 0.4rem;
+    }
+}
+
+
+.herosection-name-container-top > p{
+    font-size: 1.5rem;
+    color: rgb(88, 88, 88);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.herosection-name-container-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid rgb(0, 255, 72); */
+}
+
+.herosection-name-container-button>button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: rgb(221, 221, 221);
+    background-color: rgb(34, 34, 34);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+
+    &:hover {
+        background-color: rgb(161, 161, 161);
+        color: rgb(34, 34, 34);
+    }
+}

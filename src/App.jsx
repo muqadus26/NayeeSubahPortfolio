@@ -7,19 +7,26 @@ function App() {
 
 
   return (
-    <div className='appfile'>
-      {/* <h1>Header</h1> */}
+    <>
 
       <Header />
-      <HeroSection />
+      <div className='appfile'>
+        
 
-      
-      <h1>About</h1>
-      <h1>Skills</h1>
-      <h1>Services</h1>
-      <h1>Portfolio</h1>
-      <h1>Contact</h1>
-    </div>
+
+
+        <HeroSection />
+
+
+        <h1>About</h1>
+        <h1>Skills</h1>
+        <h1>Services</h1>
+        <h1>Portfolio</h1>
+        <h1>Contact</h1>
+      </div>
+    </>
+
+
   )
 }
 
