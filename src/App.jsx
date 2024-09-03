@@ -1,5 +1,6 @@
 
 import './App.css'
+import About from './components/about/About'
 import Header from './components/header/Header'
 import HeroSection from './components/herosection/HeroSection'
 
@@ -11,14 +12,14 @@ function App() {
 
       <Header />
       <div className='appfile'>
-        
+
 
 
 
         <HeroSection />
 
 
-        <h1>About</h1>
+        <About />
         <h1>Skills</h1>
         <h1>Services</h1>
         <h1>Portfolio</h1>

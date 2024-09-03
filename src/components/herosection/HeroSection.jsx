@@ -18,15 +18,18 @@ const HeroSection = () => {
   const heroSectionIconData = [
     {
       icon: <IoLogoInstagram />,
-      link: 'https://instagram.com'
+      link: 'https://instagram.com',
+      color: "#E1306C"
     },
     {
       icon: <CiLinkedin />,
-      link: 'https://linkedin.com'
+      link: 'https://linkedin.com',
+      color: "#0A66C2"
     },
     {
       icon: <FaTwitter />,
-      link: 'https://twitter.com'
+      link: 'https://twitter.com',
+      color: "#1DA1F2"
     }
   ]
 
@@ -37,10 +40,10 @@ const HeroSection = () => {
   return (
     <div className='herosection-main-container'>
 
-      <div className='herosection-icon-container'>
+      <div className='herosection-icon-container' id='#'>
         {heroSectionIconData.map((muzammil, index) => {
           return (
-            <a href={muzammil.link}>{muzammil.icon}</a>
+            <a href={muzammil.link} className={`icon-container-hover-${index}`}>{muzammil.icon}</a>
           )
         })}
       </div>
