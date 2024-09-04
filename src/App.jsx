@@ -20,6 +20,7 @@ function App() {
 
 
         <About />
+        GIT CHANGES
         <h1>Skills</h1>
         <h1>Services</h1>
         <h1>Portfolio</h1>
