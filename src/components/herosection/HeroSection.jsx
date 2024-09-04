@@ -38,9 +38,9 @@ const HeroSection = () => {
 
 
   return (
-    <div className='herosection-main-container'>
+    <div className='herosection-main-container' id='#'>
 
-      <div className='herosection-icon-container' id='#'>
+      <div className='herosection-icon-container' >
         {heroSectionIconData.map((muzammil, index) => {
           return (
             <a href={muzammil.link} className={`icon-container-hover-${index}`}>{muzammil.icon}</a>
