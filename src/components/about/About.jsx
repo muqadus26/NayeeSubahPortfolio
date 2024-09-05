@@ -4,6 +4,7 @@ import { FiFile } from 'react-icons/fi'
 import aboutSectionImage from '../../websitedesignimages/heropicture.jpg'
 import { BiBadge, BiHeadphone } from 'react-icons/bi'
 import { BsBag } from 'react-icons/bs'
+import Buttons from '../Buttons'
 
 const About = () => {
 
@@ -65,7 +66,13 @@ const About = () => {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sunt at quis a sit minus ut atque, architecto eius! Accusamus ratione esse dolore, suscipit dolorem deserunt rerum sed nesciunt culpa.
           </p>
 
-          <button className='about-section-bottom-right-bottom'>Download CV <FiFile /></button>
+          {/* <div className='herosection-name-container-button'>
+            <button>Download Cv <FiFile /></button>
+          </div> */}
+
+          <Buttons btnTitle="Download CV" btnIcon={<FiFile />}/>
+
+
         </div>
 
       </div>

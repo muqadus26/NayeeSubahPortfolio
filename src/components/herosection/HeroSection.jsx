@@ -7,6 +7,7 @@ import { GiHand } from "react-icons/gi";
 import { FaTelegramPlane } from "react-icons/fa";
 
 import picture from '../../websitedesignimages/heropicture.jpg'
+import Buttons from '../Buttons';
 
 
 
@@ -61,9 +62,8 @@ const HeroSection = () => {
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis est sequi, deleniti optio exercitationem, magni repellat totam rerum perspiciatis porro et tempora autem repudiandae iusto? Suscipit nesciunt illum consectetur quibusdam?</p>
         </div>
 
-        <div className='herosection-name-container-button'>
-          <button>Say Hello <FaTelegramPlane /></button>
-        </div>
+        <Buttons btnTitle={"Say Hello"} btnIcon={<FaTelegramPlane />} />
+        
       </div>
 
       <div className='herosection-image-container'>
