@@ -13,7 +13,7 @@ const Header = () => {
             link: "#about"
         },
         {
-            name: "Slills",
+            name: "Skills",
             link: "#skills"
         }
     ]
