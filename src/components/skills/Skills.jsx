@@ -66,15 +66,15 @@ const Skills = () => {
             ],
             skillSetRight: [
                 {
-                    language: "HTML",
+                    language: "Firebase",
                     experience: "Basic"
                 },
                 {
-                    language: "CSS",
+                    language: "Python",
                     experience: "Advanced"
                 },
                 {
-                    language: "JavaSript",
+                    language: "Django", 
                     experience: "Basic"
                 },
             ]
@@ -100,13 +100,14 @@ const Skills = () => {
                             <h1 className='skills-section-bottom-main-top'>{data.mainTitle}</h1>
 
                             <div className='skills-section-bottom-main-bottom'>
-                                <div style={{ display: "flex", flexDirection: "column" }}>
+                                <div style={{ display: "flex", flexDirection: "column", gap: "1.6rem" }}>
                                     {data.skillSetLeft.map((leftData, index) => {
                                         return (
 
                                             <div style={{
                                                 display: "flex",
-                                                flexDirection: "column"
+                                                flexDirection: "column",
+                                                gap: "1.6rem"
                                             }}>
 
                                                 <div className='skills-section-bottom-main-bottom-leftColumn'>
@@ -134,13 +135,16 @@ const Skills = () => {
                                     {data.skillSetRight.map((rightData, index) => {
                                         return (
 
-                                            <div style={{
+                                            <div className='skills-section-bottom-main-bottom-leftColumn-individual' style={{
                                                 display: "flex",
-                                                flexDirection: "column"
+                                                flexDirection: "column",
+                                                gap: "1.6rem",
+                                               
+                                                
                                             }}>
 
                                                 <div className='skills-section-bottom-main-bottom-rightColumn'>
-                                                    <div clzassName='inner-data'>
+                                                    <div className='inner-data'>
                                                         <h3><GoVerified /></h3>
 
                                                         <div>
