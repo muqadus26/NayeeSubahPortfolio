@@ -1,0 +1,18 @@
+.skills-section-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    gap: 10rem;
+    border: 1px solid black;
+}
+
+
+.skills-section-bottom-main{
+    border: 1px solid #ff0000;
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: 0.54rem;
+
+}

@@ -1,10 +1,11 @@
 import React from 'react'
-// import './about.css'
+import './skills.css'
 import { FiFile } from 'react-icons/fi'
 import aboutSectionImage from '../../websitedesignimages/heropicture.jpg'
 import { BiBadge, BiHeadphone } from 'react-icons/bi'
 import { BsBag } from 'react-icons/bs'
 import Buttons from '../Buttons'
+import { GoVerified } from 'react-icons/go'
 
 const Skills = () => {
 
@@ -45,15 +46,15 @@ const Skills = () => {
             mainTitle: "Backend Developer",
             skillSetLeft: [
                 {
-                    language: "HTML",
+                    language: " Node.js",
                     experience: "Basic"
                 },
                 {
-                    language: "CSS",
+                    language: "Express",
                     experience: "Advanced"
                 },
                 {
-                    language: "JavaSript",
+                    language: "MongoDB",
                     experience: "Basic"
                 },
             ],
@@ -87,6 +88,35 @@ const Skills = () => {
 
 
             <div className='skills-section-bottom'>
+                {skillsData.map((data, index) => {
+                    return (
+                        <div className='skills-section-bottom-main'>
+                            <h1 className='skills-section-bottom-main-top'>{data.mainTitle}</h1>
+
+                            <div className='skills-section-bottom-main-bottom'>
+
+                                {data.skillSetLeft.map((leftData, index) => {
+                                    return (
+                                        <div className='skills-section-bottom-main-bottom-leftColumn'>
+                                            <div className='inner-data'>
+                                                <h3><GoVerified /></h3>
+
+                                                <div>
+                                                    <h2>{leftData.language}</h2>
+                                                    <span>{leftData.experience}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+
+
+
+                                <div className='skills-section-bottom-main-bottom-rightColumn'></div>
+                            </div>
+                        </div>
+                    )
+                })}
 
             </div>
 
