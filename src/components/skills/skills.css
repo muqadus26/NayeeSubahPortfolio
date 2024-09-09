@@ -5,14 +5,51 @@
     padding: 3rem;
     gap: 10rem;
     border: 1px solid black;
+
+    border: 1px solid red;
 }
 
 
 .skills-section-bottom-main{
-    border: 1px solid #ff0000;
+    /* border: 1px solid #ff0000; */
     background-color: white;
     padding: 2rem;
     border: 1px solid gray;
     border-radius: 0.54rem;
 
+}
+
+.inner-data{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.skills-section-bottom-main-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 2rem;
+    /* flex-direction: column;  */
+
+    border: 1px solid red;
+}
+
+.skills-section-bottom-main-bottom-leftColumn{
+    /* background-color: red; */
+    display: flex;
+}
+
+
+.inner-data > h3{
+    font-size: 1.9rem;
+}
+
+
+
+.skills-section-bottom-main-bottom-rightColumn{
+    display: flex;
+    flex-direction: column;
 }

@@ -10,6 +10,8 @@ import { GoVerified } from 'react-icons/go'
 const Skills = () => {
 
     const skillsData = [
+
+        // FRONTEND DEVELOPER OBJECT
         {
             mainTitle: "Frontend Developer",
             skillSetLeft: [
@@ -42,6 +44,10 @@ const Skills = () => {
             ]
 
         },
+
+
+
+        // BACKEND DEVELOPER OBJECT
         {
             mainTitle: "Backend Developer",
             skillSetLeft: [
@@ -94,25 +100,67 @@ const Skills = () => {
                             <h1 className='skills-section-bottom-main-top'>{data.mainTitle}</h1>
 
                             <div className='skills-section-bottom-main-bottom'>
+                                <div style={{ display: "flex", flexDirection: "column" }}>
+                                    {data.skillSetLeft.map((leftData, index) => {
+                                        return (
 
-                                {data.skillSetLeft.map((leftData, index) => {
-                                    return (
-                                        <div className='skills-section-bottom-main-bottom-leftColumn'>
-                                            <div className='inner-data'>
-                                                <h3><GoVerified /></h3>
+                                            <div style={{
+                                                display: "flex",
+                                                flexDirection: "column"
+                                            }}>
 
-                                                <div>
-                                                    <h2>{leftData.language}</h2>
-                                                    <span>{leftData.experience}</span>
+                                                <div className='skills-section-bottom-main-bottom-leftColumn'>
+                                                    <div className='inner-data'>
+                                                        <h3><GoVerified /></h3>
+
+                                                        <div>
+                                                            <h2>{leftData.language}</h2>
+                                                            <span>{leftData.experience}</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
                                             </div>
-                                        </div>
-                                    )
-                                })}
+
+                                        )
+                                    })}
 
 
 
-                                <div className='skills-section-bottom-main-bottom-rightColumn'></div>
+                                </div>
+
+
+                                <div className='skills-section-bottom-main-bottom-rightColumn'>
+                                    {data.skillSetRight.map((rightData, index) => {
+                                        return (
+
+                                            <div style={{
+                                                display: "flex",
+                                                flexDirection: "column"
+                                            }}>
+
+                                                <div className='skills-section-bottom-main-bottom-rightColumn'>
+                                                    <div clzassName='inner-data'>
+                                                        <h3><GoVerified /></h3>
+
+                                                        <div>
+                                                            <h2>{rightData.language}</h2>
+                                                            <span>{rightData.experience}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        )
+                                    })}
+                                </div>
+
+
+
+
+
+
                             </div>
                         </div>
                     )
