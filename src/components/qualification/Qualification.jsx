@@ -16,22 +16,16 @@ const Qualification = () => {
             ],
             educationDetail: [
                 {
-                    educationName: 'THE CITIZENS FOUNDATION SCHOOL',
+                    educationName: 'EMBELLISH SCHOOL SYSTEM',
                     educationLocation: 'Karachi - School',
-                    educationDuration: '2011 - 2021',
+                    educationDuration: '2010 - 2022',
                     leftSide: true,
                 },
                 {
-                    educationName: 'GOVT DEGREE COLLEGE, MALIR CANTT',
+                    educationName: 'KHURSHEED GOVT GIRLS COLLEGE',
                     educationLocation: 'Karachi - College',
-                    educationDuration: '2021 - 2023',
-                    leftSide: false,
-                },
-                {
-                    educationName: 'DHA Suffa University',
-                    educationLocation: 'Karachi - University',
                     educationDuration: '2023 - Present',
-                    leftSide: true,
+                    leftSide: false,
                 },
             ],
         },
